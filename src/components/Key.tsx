@@ -2,10 +2,6 @@ import styled, { css } from 'styled-components/macro';
 
 type Size = 'large' | 'medium' | 'small';
 
-type KeyProps = {
-  size: Size;
-};
-
 export const Key = styled.span<{ size: Size }>`
   display: flex;
   justify-content: center;
