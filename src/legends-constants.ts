@@ -27,7 +27,19 @@ export const letters = [
   'z',
 ];
 
-export const modifiers = ['Alt', 'Cmd', 'Ctrl', 'Shift', 'BkSp', 'Enter', 'Esc', 'Space', 'Tab'];
+export const modifiers = ['Alt', 'Cmd', 'Ctrl', 'Shift'];
+
+export const spacings = [
+  'BkSp',
+  'Enter',
+  'Esc',
+  'Space',
+  'Tab',
+  entityToChar('&larr;'),
+  entityToChar('&uarr;'),
+  entityToChar('&rarr;'),
+  entityToChar('&darr;'),
+];
 
 export const symbols = [
   '`',
@@ -60,3 +72,9 @@ export const symbols = [
   '/',
   '?',
 ];
+
+function entityToChar(str: string) {
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = str;
+  return textarea.value;
+}

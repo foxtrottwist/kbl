@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'styled-components/macro';
 import { Controls, ControlRow, Key, Legend, Atreus } from './components';
-import { letters, modifiers, symbols } from './legends-constants';
+import { letters, modifiers, spacings, symbols } from './legends-constants';
 
 export default function App() {
   const [selectedCharater, setSelectedCharater] = useState<string | undefined>();
@@ -21,6 +21,14 @@ export default function App() {
           {symbols.map((symbol) => (
             <Key key={symbol} onClick={() => setSelectedCharater(symbol)} size='small'>
               <Legend>{symbol}</Legend>
+            </Key>
+          ))}
+        </ControlRow>
+
+        <ControlRow>
+          {spacings.map((spacing) => (
+            <Key key={spacing} onClick={() => setSelectedCharater(spacing)} size='medium'>
+              <Legend>{spacing}</Legend>
             </Key>
           ))}
         </ControlRow>
