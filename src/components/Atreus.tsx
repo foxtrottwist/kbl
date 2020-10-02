@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'styled-components/macro';
 import { Key, Legend } from './index';
 
-const offsets = ['1%', '3.5%', '6%', '2.5%', '0%', '1.5%'];
+const offsets = ['1%', '3.5%', '6%', '2.5%', '-2%', '1.5%'];
 
 const lhSide = [
   ['q', 'a', 'z', 'esc'],
