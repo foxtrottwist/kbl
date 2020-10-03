@@ -1,7 +1,8 @@
 import React from 'react';
 import 'styled-components/macro';
 import { useLegendUpdate } from '../contexts';
-import { ControlRow, Key, Legend } from './index';
+import { Key, Legend } from './index';
+import { ControlRow } from './ControlRow';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
 
 export function Controls() {
