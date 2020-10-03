@@ -1,6 +1,5 @@
 import React from 'react';
 import 'styled-components/macro';
-import { Legend } from './index';
 
 type KeyProps = {
   legend: string;
@@ -25,7 +24,14 @@ export function Key({ legend, onClick }: KeyProps) {
       `}
       onClick={onClick}
     >
-      <Legend>{legend}</Legend>
+      <span
+        css={`
+          color: #282c34;
+          text-transform: capitalize;
+        `}
+      >
+        {legend}
+      </span>
     </span>
   );
 }
