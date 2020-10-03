@@ -32,7 +32,7 @@ export function Atreus({ selectedCharater, setSelectedCharater }: AtreusProps) {
     <div
       css={`
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: auto;
         width: 65vw;
       `}
