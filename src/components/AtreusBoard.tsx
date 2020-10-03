@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'styled-components/macro';
 import { useLegendState, useLegendUpdate } from '../contexts';
-import { Key, Legend } from './index';
+import { Key } from './Key';
 
 type AtreusBoardProps = {
   keyMap: string[][];
