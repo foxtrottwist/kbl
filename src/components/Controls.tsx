@@ -1,7 +1,7 @@
 import React from 'react';
 import 'styled-components/macro';
 import { useLegendUpdate } from '../contexts';
-import { Key, Legend } from './index';
+import { Functionality, Legend } from './index';
 import { ControlRow } from './ControlRow';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
 
@@ -21,33 +21,33 @@ export function Controls() {
     >
       <ControlRow>
         {letters.map((letter) => (
-          <Key key={letter} onClick={() => setSelectedCharater(letter)} size='small'>
+          <Functionality key={letter} onClick={() => setSelectedCharater(letter)}>
             <Legend>{letter}</Legend>
-          </Key>
+          </Functionality>
         ))}
       </ControlRow>
 
       <ControlRow>
         {symbols.map((symbol) => (
-          <Key key={symbol} onClick={() => setSelectedCharater(symbol)} size='small'>
+          <Functionality key={symbol} onClick={() => setSelectedCharater(symbol)}>
             <Legend>{symbol}</Legend>
-          </Key>
+          </Functionality>
         ))}
       </ControlRow>
 
       <ControlRow>
         {spacings.map((spacing) => (
-          <Key key={spacing} onClick={() => setSelectedCharater(spacing)} size='auto'>
+          <Functionality key={spacing} onClick={() => setSelectedCharater(spacing)}>
             <Legend>{spacing}</Legend>
-          </Key>
+          </Functionality>
         ))}
       </ControlRow>
 
       <ControlRow>
         {modifiers.map((modifier) => (
-          <Key key={modifier} onClick={() => setSelectedCharater(modifier)} size='auto'>
+          <Functionality key={modifier} onClick={() => setSelectedCharater(modifier)}>
             <Legend>{modifier}</Legend>
-          </Key>
+          </Functionality>
         ))}
       </ControlRow>
     </header>

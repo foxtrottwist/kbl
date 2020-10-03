@@ -10,9 +10,9 @@ type AtreusBoardProps = {
 };
 
 export function AtreusBoard({ keyMap, offsets, side }: AtreusBoardProps) {
-  const [keys, setKeys] = useState(keyMap);
-  const selectedCharater = useLegendState();
   const setSelectedCharater = useLegendUpdate() as React.Dispatch<React.SetStateAction<string>>;
+  const selectedCharater = useLegendState();
+  const [keys, setKeys] = useState(keyMap);
 
   function handleClick(column: number, key: number) {
     if (!selectedCharater) return;
@@ -48,7 +48,6 @@ export function AtreusBoard({ keyMap, offsets, side }: AtreusBoardProps) {
             <Key
               key={`${legend}-${legendIndex}`}
               onClick={() => handleClick(columnIndex, legendIndex)}
-              size='large'
             >
               <Legend>{legend}</Legend>
             </Key>
