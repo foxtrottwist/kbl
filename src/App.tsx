@@ -27,7 +27,7 @@ export default function App() {
 
         <ControlRow>
           {spacings.map((spacing) => (
-            <Key key={spacing} onClick={() => setSelectedCharater(spacing)} size='medium'>
+            <Key key={spacing} onClick={() => setSelectedCharater(spacing)} size='auto'>
               <Legend>{spacing}</Legend>
             </Key>
           ))}
@@ -35,7 +35,7 @@ export default function App() {
 
         <ControlRow>
           {modifiers.map((modifier) => (
-            <Key key={modifier} onClick={() => setSelectedCharater(modifier)} size='medium'>
+            <Key key={modifier} onClick={() => setSelectedCharater(modifier)} size='auto'>
               <Legend>{modifier}</Legend>
             </Key>
           ))}

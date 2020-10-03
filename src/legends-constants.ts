@@ -27,7 +27,16 @@ export const letters = [
   'z',
 ];
 
-export const modifiers = ['Alt', 'Cmd', 'Ctrl', 'Shift'];
+export const modifiers = [
+  'Left Alt',
+  'Left Cmd',
+  'Left Ctrl',
+  'Left Shift',
+  'Right Alt',
+  'Right Cmd',
+  'Right Ctrl',
+  'Right Shift',
+];
 
 export const spacings = [
   'BkSp',
