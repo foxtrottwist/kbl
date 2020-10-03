@@ -47,10 +47,9 @@ export function AtreusBoard({ keyMap, offsets, side }: AtreusBoardProps) {
           {column.map((legend, legendIndex) => (
             <Key
               key={`${legend}-${legendIndex}`}
+              legend={legend}
               onClick={() => handleClick(columnIndex, legendIndex)}
-            >
-              <Legend>{legend}</Legend>
-            </Key>
+            />
           ))}
         </div>
       ))}
