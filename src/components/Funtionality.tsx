@@ -10,5 +10,7 @@ export const Functionality = styled.button`
   background-color: transparent;
   border: 0.5px solid #282c34;
   border-radius: 4.5%;
+  color: #282c34;
+  text-transform: capitalize;
   cursor: pointer;
 `;

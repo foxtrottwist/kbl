@@ -1,7 +1,7 @@
 import React from 'react';
 import 'styled-components/macro';
 import { useLegendUpdate } from '../contexts';
-import { Functionality, Legend } from './index';
+import { Functionality } from './index';
 import { ControlRow } from './ControlRow';
 import { SwapKeysButton } from './SwapKeysButton';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
@@ -23,7 +23,7 @@ export function Controls() {
       <ControlRow>
         {letters.map((letter) => (
           <Functionality key={letter} onClick={() => setSelectedCharater(letter)}>
-            <Legend>{letter}</Legend>
+            {letter}
           </Functionality>
         ))}
       </ControlRow>
@@ -31,7 +31,7 @@ export function Controls() {
       <ControlRow>
         {symbols.map((symbol) => (
           <Functionality key={symbol} onClick={() => setSelectedCharater(symbol)}>
-            <Legend>{symbol}</Legend>
+            {symbol}
           </Functionality>
         ))}
       </ControlRow>
@@ -39,7 +39,7 @@ export function Controls() {
       <ControlRow>
         {spacings.map((spacing) => (
           <Functionality key={spacing} onClick={() => setSelectedCharater(spacing)}>
-            <Legend>{spacing}</Legend>
+            {spacing}
           </Functionality>
         ))}
       </ControlRow>
@@ -47,7 +47,7 @@ export function Controls() {
       <ControlRow>
         {modifiers.map((modifier) => (
           <Functionality key={modifier} onClick={() => setSelectedCharater(modifier)}>
-            <Legend>{modifier}</Legend>
+            {modifier}
           </Functionality>
         ))}
       </ControlRow>
