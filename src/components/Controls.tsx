@@ -3,6 +3,7 @@ import 'styled-components/macro';
 import { useLegendUpdate } from '../contexts';
 import { Functionality, Legend } from './index';
 import { ControlRow } from './ControlRow';
+import { SwapKeysButton } from './SwapKeysButton';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
 
 export function Controls() {
@@ -50,6 +51,8 @@ export function Controls() {
           </Functionality>
         ))}
       </ControlRow>
+
+      <SwapKeysButton />
     </header>
   );
 }
