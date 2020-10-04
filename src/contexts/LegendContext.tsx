@@ -8,10 +8,10 @@ const LegendUpdateContext = createContext<React.Dispatch<React.SetStateAction<st
 type LegendProviderProps = { children: React.ReactNode };
 
 export function LegendProvider({ children }: LegendProviderProps) {
-  const [Legend, setLegend] = useState('');
+  const [legend, setLegend] = useState('');
 
   return (
-    <LegendStateContext.Provider value={Legend}>
+    <LegendStateContext.Provider value={legend}>
       <LegendUpdateContext.Provider value={setLegend}>{children}</LegendUpdateContext.Provider>
     </LegendStateContext.Provider>
   );
