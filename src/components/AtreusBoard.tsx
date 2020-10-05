@@ -10,7 +10,7 @@ type AtreusBoardProps = {
 };
 
 export function AtreusBoard({ keyMap, offsets, side }: AtreusBoardProps) {
-  const setSelectedCharater = useLegendUpdate() as React.Dispatch<React.SetStateAction<string>>;
+  const setSelectedCharater = useLegendUpdate();
   const selectedCharater = useLegendState();
   const [keys, setKeys] = useState(keyMap);
 
@@ -22,7 +22,7 @@ export function AtreusBoard({ keyMap, offsets, side }: AtreusBoardProps) {
         i === column ? keys[column].map((l, i) => (i === key ? selectedCharater : l)) : c
       );
 
-      setKeys(updatedKeys as string[][]);
+      setKeys(updatedKeys);
       setSelectedCharater('');
     }
   }

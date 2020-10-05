@@ -7,7 +7,7 @@ import { SwapKeysButton } from './SwapKeysButton';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
 
 export function Controls() {
-  const setSelectedCharater = useLegendUpdate() as React.Dispatch<React.SetStateAction<string>>;
+  const setSelectedCharater = useLegendUpdate();
 
   return (
     <header
