@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'styled-components/macro';
-import { useLegendState, useLegendUpdate } from '../contexts';
+import { useSelectedCharaterState, useSelectedCharaterUpdate } from '../contexts';
 import { Key } from './Key';
 
 type AtreusBoardProps = {
@@ -10,8 +10,8 @@ type AtreusBoardProps = {
 };
 
 export function AtreusBoard({ keyMap, offsets, side }: AtreusBoardProps) {
-  const setSelectedCharater = useLegendUpdate();
-  const selectedCharater = useLegendState();
+  const setSelectedCharater = useSelectedCharaterUpdate();
+  const selectedCharater = useSelectedCharaterState();
   const [keys, setKeys] = useState(keyMap);
 
   function handleClick(column: number, key: number) {

@@ -1,13 +1,13 @@
 import React from 'react';
 import 'styled-components/macro';
-import { useLegendUpdate } from '../contexts';
+import { useSelectedCharaterUpdate } from '../contexts';
 import { Functionality } from './index';
 import { ControlRow } from './ControlRow';
 import { SwapKeysButton } from './SwapKeysButton';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
 
 export function Controls() {
-  const setSelectedCharater = useLegendUpdate();
+  const setSelectedCharater = useSelectedCharaterUpdate();
 
   return (
     <header

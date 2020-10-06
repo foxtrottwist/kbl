@@ -1,1 +1,1 @@
-export * from './LegendContext';
+export * from './selectedCharaterContext';

@@ -1,17 +1,17 @@
 import React from 'react';
 import 'styled-components/macro';
-import { LegendProvider } from './contexts';
+import { SelectedCharaterProvider } from './contexts';
 import { Controls, Atreus } from './components';
 
 export default function App() {
   return (
     <div className='App'>
-      <LegendProvider>
+      <SelectedCharaterProvider>
         <Controls />
         <main>
           <Atreus />
         </main>
-      </LegendProvider>
+      </SelectedCharaterProvider>
     </div>
   );
 }
