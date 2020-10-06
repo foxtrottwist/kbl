@@ -7,7 +7,7 @@ import { SwapKeysButton } from './SwapKeysButton';
 import { letters, modifiers, spacings, symbols } from '../legends-constants';
 
 export function Controls() {
-  const setSelectedCharater = useSelectedCharaterUpdate();
+  const { setSelectedCharater } = useSelectedCharaterUpdate();
 
   return (
     <header
